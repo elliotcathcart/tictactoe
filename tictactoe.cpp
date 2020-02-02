@@ -38,7 +38,6 @@ int main() {
 		play = entry[0];
 	}
 	cout << "Thanks for playing!" << endl;
-
 }
 
 void printBoard(char *boardPtr) {
