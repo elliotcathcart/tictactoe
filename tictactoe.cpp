@@ -18,7 +18,6 @@ void startGame(int &p1WinCount, int &p2WinCount);
 void playerTurn(int playerNumber, char* boardPtr);
 
 int main() {
-
 	int p1WinCount = 0, p2WinCount = 0;
 	cout << "Welcome to Tic Tac Toe!\nWould you like to play a game? (Y/N) ";
 
