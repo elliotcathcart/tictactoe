@@ -18,12 +18,12 @@ void startGame(int &p1WinCount, int &p2WinCount);
 void playerTurn(int playerNumber, char* boardPtr);
 
 int main() {
+
 	int p1WinCount = 0, p2WinCount = 0;
 	cout << "Welcome to Tic Tac Toe!\nWould you like to play a game? (Y/N) ";
 
-	string entry;
-	getline(cin, entry);
-	char play = entry[0];
+	char play;
+	cin >> play;
 	while (toupper(play) != 'N') {
 		if (toupper(play) == 'Y') {
 			cout << "\nLet's get started, have fun!" << endl;
@@ -34,10 +34,10 @@ int main() {
 		else {
 			cout << "Not a valid entry, Y or N only, try again! \nWould you like to play a game? Y/N ";
 		}
-		getline(cin, entry);
-		play = entry[0];
+		cin >> play;
 	}
 	cout << "Thanks for playing!" << endl;
+
 }
 
 void printBoard(char *boardPtr) {
